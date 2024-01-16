@@ -1,14 +1,10 @@
 package graph;
 
-/*
-* This program stores the graph data using matrix representation and perform
-* DFS traversal on that.
-*
-* */
-public class DFSWithMatrixRepresentation {
+import java.util.Stack;
 
-    public  static void main(String[] args){
+public class BFSWithMatrixRepresentation {
 
+    public static void main(String[] args){
         GraphMatrixRepresentation graph = new GraphMatrixRepresentation(4);
 
         graph.addEdge(0, 1);
@@ -18,7 +14,7 @@ public class DFSWithMatrixRepresentation {
         graph.addEdge(2, 3);
         graph.addEdge(3, 3);
 
-        graph.dfsTraversal(2);
+        graph.bfsTraversal(2);
     }
-
 }
+
